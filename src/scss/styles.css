@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'Migra-Extralight';
+  src: url('../../public/font/Migra-Extralight.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.custom-heading-light {
+  color: #efe7e3; /* Replace with your desired color */
+  font-family: 'Migra-Extralight', sans-serif; /* Replace with your desired font */
+  font-weight: bold;
+  font-size: 2.5rem; /* Adjust the font size as needed */
+  letter-spacing: 0.05rem;
+}
+
+.custom-heading-dark {
+  color: #9f7f8d; /* Replace with your desired color */
+  font-family: 'Migra-Extralight', sans-serif; /* Replace with your desired font */
+  font-weight: bold;
+  font-size: 2.5rem; /* Adjust the font size as needed */
+  letter-spacing: 0.05rem;
+}
+
+.custom-message {
+  color: #9f7f8d; /* Replace with your desired color */
+  font-family: 'Migra-Extralight', sans-serif; /* Replace with your desired font */
+  font-weight: bold;
+  font-size: 1.25rem; /* Adjust the font size as needed */
+  letter-spacing: 0.05rem;
+}
+
+.custom-message-light {
+  color: #efe7e3; /* Replace with your desired color */
+  font-family: 'Migra-Extralight', sans-serif; /* Replace with your desired font */
+  font-weight: bold;
+  font-size: 1.25rem; /* Adjust the font size as needed */
+  letter-spacing: 0.05rem;
+}
+
+.custom-jumbotron.bg-light {
+  background-color: #efe7e3 !important;
+}
+
+.custom-jumbotron.bg-white {
+  background-color: #efe7e3 !important;
+}
+
+.custom-jumbotron.bg-transparent {
+  background-color: #dfb4c6 !important;
+}
+
+.custom-border {
+  border-color: #9f7f8d !important; /* Replace with your desired border color */
+}
+
+.custom-navlink{
+  color: #9f7f8d; /* Replace with your desired color */
+  font-family: 'Migra-Extralight', sans-serif; /* Replace with your desired font */
+  font-weight: bold;
+  font-size: 1.25rem; /* Adjust the font size as needed */
+  letter-spacing: 0.05rem;
+}

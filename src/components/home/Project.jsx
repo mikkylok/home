@@ -4,6 +4,8 @@ import { Jumbotron } from "./migration";
 import Row from "react-bootstrap/Row";
 import ProjectCard from "./ProjectCard";
 import axios from "axios";
+import '../../scss/styles.css';
+
 
 const dummyProject = {
   name: null,
@@ -36,7 +38,8 @@ const Project = ({ heading, username, length, specfic }) => {
       // adding specified repos
       try {
         for (let repoName of specfic) {
-          const response = await axios.get(`${specficReposAPI}/${repoName}`);
+          // const response = await axios.get(`${specficReposAPI}/${repoName}`);
+          const response = await axios.get(`${API}/repos/${repoName}`);
           repoList.push(response.data);
         }
       } catch (error) {
@@ -55,9 +58,9 @@ const Project = ({ heading, username, length, specfic }) => {
   }, [fetchRepos]);
 
   return (
-    <Jumbotron fluid id="projects" className="bg-light m-0">
+    <Jumbotron fluid id="projects" className="bg-light m-0 custom-jumbotron">
       <Container className="">
-        <h2 className="display-4 pb-5 text-center">{heading}</h2>
+        <h2 className="display-4 pb-5 text-center custom-heading-dark" >{heading}</h2>
         <Row>
           {projectsArray.length
             ? projectsArray.map((project, index) => (

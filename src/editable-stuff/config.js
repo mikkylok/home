@@ -6,30 +6,30 @@ const navBar = {
 // Main Body SECTION
 const mainBody = {
   gradientColors: "#4484ce, #1ad7c0, #ff9b11, #9b59b6, #ff7f7f, #ecf0f1",
-  firstName: "Hashir",
+  firstName: "Meixi Lu",
   middleName: "",
-  lastName: "Shoaib",
-  message: " Passionate about changing the world with technology. ",
+  lastName: "陸美希",
+  message: " You can call me Mikky, or Mei-shee, sh as in sheep if you insist. ",
   icons: [
     {
       image: "fa-github",
-      url: "https://github.com/hashirshoaeb",
+      url: "https://github.com/mikkylok",
     },
     {
       image: "fa-facebook",
-      url: "https://www.facebook.com/hashirshoaeb",
+      url: "https://www.facebook.com/mikkylok",
     },
     {
       image: "fa-instagram",
-      url: "https://www.instagram.com/hashirshoaeb/",
+      url: "https://www.instagram.com/mikkylok/",
     },
     {
       image: "fa-linkedin",
-      url: "https://www.linkedin.com/in/hashirshoaeb/",
+      url: "https://www.linkedin.com/in/meixilu/",
     },
     {
       image: "fa-twitter",
-      url: "https://www.twitter.com/hashirshoaeb/",
+      url: "https://www.twitter.com/mikkylokl/",
     },
   ],
 };
@@ -46,16 +46,17 @@ const mainBody = {
 //      i.e: profilePictureLink: "",
 // For Resume either provide link to your resume or import from "editable-stuff" directory
 //     i.e resume: require("../editable-stuff/resume.pdf"),
-//         resume: "https://docs.google.com/document/d/13_PWdhThMr6roxb-UFiJj4YAFOj8e_bv3Vx9UHQdyBQ/edit?usp=sharing",
+//         resume: "https://docs.google.com/document/d/1v3CHnmB1bSSzqwJmWC_VksJ17SucA5NnWe55nHw1UI4",
 
 const about = {
   show: true,
   heading: "About Me",
-  imageLink: require("../editable-stuff/hashirshoaeb.png"),
+  imageLink: require("../editable-stuff/mikky.jpeg"),
   imageSize: 375,
+  resume: "https://docs.google.com/document/d/1v3CHnmB1bSSzqwJmWC_VksJ17SucA5NnWe55nHw1UI4/edit",
   message:
-    "My name is Hashir Shoaib. I’m a graduate of 2020 from National University of Sciences and Technology at Islamabad with a degree in Computer Engineering. I'm most passionate about giving back to the community, and my goal is to pursue this passion within the field of software engineering. In my free time I like working on open source projects.",
-  resume: "https://docs.google.com/document/d/13_PWdhThMr6roxb-UFiJj4YAFOj8e_bv3Vx9UHQdyBQ/edit?usp=sharing",
+    "Hi there! I’m a graduate of 2024 from Northwestern University in Artificial Intelligence. I'm most passionate about the intersection of AI x Healthcare, especially assistive technology, digital health and embedded AI. " +
+      "In my free time, I enjoy contributing to open-source projects, collecting interior design and fashion vintages, and reading. "
 };
 
 // PROJECTS SECTION
@@ -66,9 +67,9 @@ const about = {
 const repos = {
   show: true,
   heading: "Recent Projects",
-  gitHubUsername: "hashirshoaeb", //i.e."johnDoe12Gh"
-  reposLength: 4,
-  specificRepos: [],
+  gitHubUsername: "mikkylok",
+  reposLength: 0,
+  specificRepos: ['mikkylok/lipreader', 'msai337-group8/domain_word_sense_disambiguation', 'jameszampa/MSAI_349_FinalProject', 'NU-MSAI-Practicum/advanced_rag_team_twain'],
 };
 
 // Leadership SECTION
@@ -79,12 +80,12 @@ const leadership = {
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae auctor eu augue ut lectus arcu bibendum at varius. Libero justo laoreet sit amet cursus sit amet. Imperdiet dui accumsan sit amet nulla facilisi morbi. At auctor urna nunc id. Iaculis urna id volutpat lacus laoreet non curabitur gravida. Et magnis dis parturient montes nascetur ridiculus mus mauris. In nisl nisi scelerisque eu ultrices vitae auctor. Mattis nunc sed blandit libero volutpat sed cras ornare. Pulvinar neque laoreet suspendisse interdum consectetur libero.",
   images: [
     { 
-      img: require("../editable-stuff/hashirshoaeb.png"), 
+      img: require("../editable-stuff/mikky.jpeg"),
       label: "First slide label", 
       paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
     },
     { 
-      img: require("../editable-stuff/hashirshoaeb.png"), 
+      img: require("../editable-stuff/mikky.jpeg"),
       label: "Second slide label", 
       paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
     },
@@ -126,8 +127,9 @@ const getInTouch = {
   show: true,
   heading: "Get In Touch",
   message:
-    "I'm currently looking for full-time Software Engineering or Machine Learning opportunities! If you know of any positions available, if you have any questions, or if you just want to say hi, please feel free to email me at",
-  email: "hashirshoaeb@gmail.com",
+    "I'm currently looking for full-time Software Engineering or Machine Learning opportunities. " +
+      "If you have any positions available, or look for a collab, please feel free to email me at",
+  email: "mikkylok at gmail.com",
 };
 
 const experiences = {

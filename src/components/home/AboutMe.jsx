@@ -1,7 +1,7 @@
 import React from "react";
-
 import axios from "axios";
 import { Jumbotron } from "./migration";
+import '../../scss/styles.css';
 
 const pictureLinkRegex = new RegExp(
   /[(http(s)?):(www.)?a-zA-Z0-9@:%._+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_+.~#?&//=]*)/
@@ -39,7 +39,7 @@ const AboutMe = ({ heading, message, link, imgSize, resume }) => {
         <div className="col-5 d-none d-lg-block align-self-center">
           {showPic && (
             <img
-              className="border border-secondary rounded-circle"
+              className="border border-secondary rounded-circle custom-border"
               src={profilePicUrl}
               alt="profilepicture"
               width={imgSize}
@@ -48,8 +48,8 @@ const AboutMe = ({ heading, message, link, imgSize, resume }) => {
           )}
         </div>
         <div className={`col-lg-${showPic ? "7" : "12"}`}>
-          <h2 className="display-4 mb-5 text-center">{heading}</h2>
-          <p className="lead text-center">{message}</p>
+          <h2 className="display-4 mb-5 text-center custom-heading-light">{heading}</h2>
+          <p className="lead text-center custom-message">{message}</p>
           {resume && (
             <p className="lead text-center">
               <a
